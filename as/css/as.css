@@ -1,0 +1,17 @@
+
+
+.jumbotron {   
+    background-image: url("/assets/site5.jpg");    
+    color: white;	
+    background-size: cover;
+    height: 50vh;
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+}
+
+#footer {
+    width: 760px;
+    background-color: beige;
+    color: black ;
+    clear: both;
+}
