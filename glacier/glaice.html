@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      
+     <title>冰川融化以後</title>
+  </head>
+  <body>
+    
+     <style>
+    .opa{  
+    position:fixed;
+	opacity:1;
+	width:250vw;
+}
+    </style> 
+      
+      <div style=" height:10vh;background-color:white"> 
+      <h1 align="center">冰川融化以後</h1></div>
+
+     
+<div style="height:400vh;">
+	<img class="opa" src="https://lh3.googleusercontent.com/kpVjL_TZmTeqMcAfbmUKHk7kCUBOQRgLFOg2KjXzDS_b_2WhI7KqBUaFEs0obsGICJfGEj5-UYUiDTYNf7iUSuY9pX3jO3FdvNuJSkvifM3MgaLSfRvBXpmH60zOInni7Hj0fHnDnA=w1800" style="position:fixed;opacity:1;width:100vw;z-index:3" data-pos="1" ;>
+    
+	<img class="opa" src="https://lh3.googleusercontent.com/Bf4YFtNxJ5uGqdO2YXS7b1pMXEL_8vm0X6ARHhDl1FumtQjx-vivruBR3z2Z2kGWXGfLsLNZmi-1AB67uTBsNGa3FO7DfsUO3FIzOAwnm1wCSyZQOhXTB7sBAUvrLJuHk_r2tgzu0g=w1800" style="position:fixed;opacity:1;width:100vw;z-index:2" data-pos="2" ;>
+    
+	<img src="https://lh3.googleusercontent.com/xhcrC7m-NCXgE-2gnByUCM7qHsxCxFhudrHMX6LVfBCrOnGOUHp5TVorQz-_EGbyE1vUxcbMFtY5gsWaczP0gfutIJJHpHYPFT8foKwLYXc6t8ryNNJFVhdboX5_x5kozE2TYJaTYA=w1800" style="position:fixed;opacity:1;width:100vw;z-index:1">
+</div>
+      
+<div style=" height:20vh;background-color:lightblue">
+    <p font size="6">美國國家航空暨太空總署（NASA)的新數據顯示，雅各布港冰川作為格陵蘭島在2000年代的大部分時間裡移動速度最快、變薄速度最快的冰川,從 2018 年到 2019 年連續增長。</p>
+    <p>今年11月1日在格拉斯哥召開的「聯合國氣候變化綱要公約第26次締約方會議」（COP26），將決定全球70億人口能否化口號為行動，齊心對抗氣候變遷。</p>
+    <p>世界氣象組織（WMO）最新報告趕在COP26前出爐，指出「極端氣候已成為新常態」，過去7年創下有記錄以來最熱的溫度，全球海平面自2013年以來加速上升，今年（2021）創下新高，這歸因於海水變暖和酸化。</p>
+      </div>
+
+
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+         
+
+    <script>
+$(function () {
+	var scrollable = $(document).height() - $(window).height();
+	console.log(scrollable);
+	$(window).scroll(function () {
+		var scrolled = $(document).scrollTop();
+		$(".opa").each(function (index) {
+			$(this).css("opacity", $(this).data("pos") - (2 * scrolled) / scrollable);
+			console.log(
+				"[" + scrolled / scrollable + "]" + index + ": " + $(this).css("opacity")
+			);
+		});
+	});
+});
+
+</script>
+    </body>
+</html>
+      
+      
+      
