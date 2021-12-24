@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <title>微積分的浪漫</title>
+    <style>
+        .slideanimate {
+            visibility: hidden;
+        }
+
+        .slide {
+            visibility: visible;
+        }
+    </style>
+
+</head>
+    <body>
+      
+    <div id="outer" style="width:100vw;background:linear-gradient(coral, dodgerblue);height: 10000px">
+    
+<img src="https://lh3.googleusercontent.com/3gc7stbEMGsF1YjKCSxEGZwSXiSNL54ePcbFmf_b0285-0wkMa5Z0X2gsxfhLOsN3m5sn6mm3pS4gfXQMSjnW4sC7jYLcG9y8hHkaFC17yvCvF-qt8_VKysn_rv0bSqGC9tFREnB2Q=w1200" class="img-fluid slideanimate" data-pos=1000 data-direction="fadeInUp" style="position:fixed;left:-100px;top:0px;width:100vw;">
+ <img src="https://lh3.googleusercontent.com/Hz7x3nacGtdcAM8FYl6i3McnOoGv4XpiqMd-ee-iFKgIzRXRFMpZGghtx-UJ6P5DIMU_LTC2t2fXMQCep81Vl0ATjDVVnrJWDPAXmo-lBCQVK-1X33D1TwYNfps4VW6v5GXYR3lk3A=w1200"  class="img-fluid slideanimate" data-pos=2000 data-direction="fadeInRight" style="position:fixed;left:-100px;top:0px;width:100vw;">
+<img src="https://lh3.googleusercontent.com/78-T26NYDXR-XTuTEgbb5lpZNU1wQuNa4t5zwwTUR3BmHHyDZr2SaI0OAhSyXJUupO3c8GDcLujCREByb4WU492hRLNPpt7jeJ4bOYxF5-WuZZRx1rJZQw_4u-8TvC6JqTxFcdWCbQ=w1200" class="img-fluid slideanimate" data-pos=3000
+            data-direction="fadeInDown" style="position:fixed;left:-100px;top:0px;width:100vw;">
+<img src="https://lh3.googleusercontent.com/vMdXkYTNxfDTt2UUZ0VjEO2AI51N94JZpvQUpFohvgb7AA5nbNDm3lVm1CMghuO73U8gL0PtyUzKS5Wp8sNiCeoIOUlxJua1S_KeuPRXNtTpcCVCNMr5tQ_jxFIlJNGGCoodA6rYNQ=w1200" class="img-fluid slideanimate" data-pos=4000
+            data-direction="fadeInLeft" style="position:fixed;left:-100px;top:0px;width:100vw;">  
+    
+</div>
+    
+      <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+      
+      <script>
+    $(function () {
+        var winh = $(window).height();
+        $(window).scroll(function () {
+            var scrolled = $(window).scrollTop();
+            $(".slideanimate").each(function () {
+                if (scrolled > $(this).data("pos")) {
+                    $(this).addClass(
+                        "animate__animated slide animate__" + $(this).data("direction")
+                    );
+                }
+                if (scrolled == 0) {
+                    $(this).removeClass(
+                        "animate__animated slide animate__" + $(this).data("direction")
+                    );
+                }
+            });
+        });
+    });
+</script>
+      
+</html>
