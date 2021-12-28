@@ -1,0 +1,6 @@
+  #div1, #div2,{
+            background-attachment: fixed;
+            background-position: 50% 70%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
